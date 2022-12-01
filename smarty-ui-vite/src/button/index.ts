@@ -1,8 +1,10 @@
-import { defineComponent, h } from 'vue'
+import Button from './Button'
+import {App} from 'vue'
 
-export default defineComponent({
-  name: 'SButton',
-  render() {
-    return h("button", null, 'MyButton')
+export { Button }
+
+export default {
+  install(app: App) {
+    app.component(Button.name, Button)
   }
-})
+}
