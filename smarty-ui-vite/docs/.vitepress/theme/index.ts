@@ -8,7 +8,7 @@ import DemoBlock from 'vitepress-theme-demoblock/components/DemoBlock.vue'
 import SmartyUI from '../../../src/entry'
 
 export default {
-  ...Theme,
+  ...Theme, 
   enhanceApp({ app }) {
     app.use(SmartyUI)
     // app.component('Demo', Demo)
