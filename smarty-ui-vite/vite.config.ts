@@ -1,9 +1,11 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import vue from "@vitejs/plugin-vue"
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { resolve } from 'path'
 // import { presetUno, presetAttributify, presetIcons } from 'unocss'
 import Unocss from './config/unocss'
+// import { UserConfig } from "vitest";
 
 
 const rollupOptions = {
@@ -15,6 +17,8 @@ const rollupOptions = {
     assetFileNames: `assets/[name].css`
   }
 }
+
+
 export default defineConfig({
   plugins: [
     vue(),
@@ -31,6 +35,14 @@ export default defineConfig({
       fileName: 'smarty-ui',
       // 导出模块
       formats: ['es', 'umd', 'iife']
+    }
+  },
+  test: {
+    globals: true,
+    environment: 'happy-dom',
+    // 支持tsx组件
+    transformMode: {
+      web: [/.[tj]sx$/]
     }
   }
 })

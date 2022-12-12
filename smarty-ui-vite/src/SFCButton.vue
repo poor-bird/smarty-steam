@@ -1,12 +1,10 @@
-<script lang='ts'>
+<script lang="ts">
 export default {
-  name: "SFCButton"
-}
+  name: "SFCButton",
+};
 </script>
 
 <template>
   <button>SFC Button</button>
 </template>
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -1,4 +1,4 @@
-import { createApp } from 'vue/dist/vue.esm-bundler.js'
+import { createApp } from "vue/dist/vue.esm-bundler.js";
 // import { createApp } from "vue/dist/vue.esm-browser";
 // import SFCButton from './SFCButton.vue'
 import SmartyUI from "./entry";
@@ -19,5 +19,7 @@ createApp({
     <SButton color="yellow" round plain icon="message" ></SButton>
     <SButton color="red" round plain icon="delete" ></SButton>
   </div>
-  `
-}).use(SmartyUI).mount('#app')
+  `,
+})
+  .use(SmartyUI)
+  .mount("#app");
