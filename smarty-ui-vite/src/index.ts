@@ -6,7 +6,7 @@ import SmartyUI from "./entry";
 createApp({
   template: `
   <div>
-    <SButton color="blue">蓝色按钮</SButton>
+    <SButton color="blue">蓝色按钮</SButton >
     <SButton color="green">绿色按钮</SButton>
     <SButton color="gray">灰色按钮</SButton>
     <SButton color="yellow">黄色按钮</SButton>
